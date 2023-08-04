@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product A updated 123"
+    },
+    {
+      "id": 3,
+      "name": "Product C",
+      "price": "23456",
+      "description": "aa"
+    },
+    {
+      "name": "product A",
+      "price": "123",
+      "id": 4
+    },
+    {
+      "name": "product A",
+      "price": "12345",
+      "id": 5
+    },
+    {
+      "name": "san pham 5",
+      "price": "123",
+      "id": 6
+    },
+    {
+      "name": "san pham 6",
+      "price": "123",
+      "id": 7
+    },
+    {
+      "name": "dat",
+      "id": 8
+    },
+    {
+      "name": "dat 2",
+      "id": 9
+    }
+  ]
+}
