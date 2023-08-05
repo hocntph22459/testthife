@@ -2,13 +2,15 @@
   "products": [
     {
       "id": 1,
-      "name": "Product A updated 123"
+      "name": "aa",
+      "price": "22222",
+      "description": "aaaaaaaaaaa"
     },
     {
       "id": 3,
-      "name": "Product C",
-      "price": "23456",
-      "description": "aa"
+      "name": "aaaaaaaa",
+      "price": "2333",
+      "description": "a"
     },
     {
       "name": "product A",
@@ -26,17 +28,16 @@
       "id": 6
     },
     {
-      "name": "san pham 6",
-      "price": "123",
-      "id": 7
+      "id": 7,
+      "name": "a",
+      "price": "2345",
+      "description": "aaaaaaa"
     },
     {
-      "name": "dat",
+      "name": "a",
+      "price": "23456",
+      "description": "aaaaaaa",
       "id": 8
-    },
-    {
-      "name": "dat 2",
-      "id": 9
     }
   ]
 }

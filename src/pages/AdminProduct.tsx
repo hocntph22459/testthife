@@ -34,7 +34,7 @@ const AdminProduct = () => {
       render: (item: any) => <>
         <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => HandleRemoveUser(item.id)} >Remove</button>
         <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><Link to={`/admin/products/${item.id}/update`}>Edit</Link></button>
-      </>
+      </> 
     },
   ];
 
