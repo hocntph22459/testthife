@@ -13,31 +13,28 @@
       "description": "a"
     },
     {
-      "name": "product A",
-      "price": "123",
-      "id": 4
+      "id": 4,
+      "name": "aaaaaaaaaaaaaaaaa",
+      "price": "22222222222",
+      "description": "aaaaaaaaaaaa"
     },
     {
-      "name": "product A",
-      "price": "12345",
-      "id": 5
+      "id": 5,
+      "name": "update product",
+      "price": "111111",
+      "description": "aaaaaaaaaaaa"
     },
     {
-      "name": "san pham 5",
-      "price": "123",
-      "id": 6
+      "id": 6,
+      "name": "update",
+      "price": "203",
+      "description": "q"
     },
     {
       "id": 7,
       "name": "a",
       "price": "2345",
       "description": "aaaaaaa"
-    },
-    {
-      "name": "a",
-      "price": "23456",
-      "description": "aaaaaaa",
-      "id": 8
     }
   ]
 }

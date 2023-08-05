@@ -5,9 +5,11 @@ export const productApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: "http://localhost:3000/"
     }),
+    tagTypes:["product"],
     endpoints: (builder) => ({
         getProducts: builder.query<Iproduct[], void>({
-            query: () => `products`
+            query: () => `products`,
+            providesTags:["product"]
         }),
         getProduct: builder.query<Iproduct, void>({
             query: (id) => `products/${id}`
@@ -19,7 +21,8 @@ export const productApi = createApi({
                     method: 'POST',
                     body: product
                 }
-            }
+            },
+            invalidatesTags:["product"]
         }),
         updateProduct: builder.mutation<Iproduct, Partial<Iproduct>>({
             query: (product) => {
@@ -28,7 +31,8 @@ export const productApi = createApi({
                     method: 'PUT',
                     body: product
                 }
-            }
+            },
+            invalidatesTags:["product"]
         }),
         deleteProduct: builder.mutation<void, Iproduct>({
             query: (id) => {
@@ -36,7 +40,8 @@ export const productApi = createApi({
                     url: `products/${id}`,
                     method: 'DELETE'
                 }
-            }
+            },
+            invalidatesTags:["product"]
         })
     }),
 })
