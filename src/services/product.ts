@@ -1,55 +1,50 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import Iproduct from '../types/product.type'
-export const productApi = createApi({
-    reducerPath: 'productApi',
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
+import Iproduct from "../type/product"
+export const productAPI = createApi({
+    reducerPath: "product",
     baseQuery: fetchBaseQuery({
-        baseUrl: "http://localhost:3000/"
+        baseUrl: "http://localhost:3000/",
+
     }),
-    tagTypes:["product"],
-    endpoints: (builder) => ({
-        getProducts: builder.query<Iproduct[], void>({
+    tagTypes: ["product"],
+    endpoints: (buidler) => ({
+        getproducts: buidler.query<Iproduct[], void>({
             query: () => `products`,
-            providesTags:["product"]
+            providesTags: ["product"]
         }),
-        getProduct: builder.query<Iproduct, void>({
+        getproductByid: buidler.query<Iproduct, number>({
             query: (id) => `products/${id}`
         }),
-        addProduct: builder.mutation<Iproduct, Partial<Iproduct>>({
+        createProduct: buidler.mutation<Iproduct, Iproduct>({
             query: (product) => {
                 return {
-                    url: 'products',
-                    method: 'POST',
+                    url: "products",
+                    method: "POST",
                     body: product
                 }
             },
-            invalidatesTags:["product"]
+            invalidatesTags: ["product"]
         }),
-        updateProduct: builder.mutation<Iproduct, Partial<Iproduct>>({
+        Updateproduct: buidler.mutation<Iproduct, Iproduct>({
             query: (product) => {
                 return {
                     url: `products/${product.id}`,
-                    method: 'PUT',
+                    method: "PUT",
                     body: product
                 }
             },
-            invalidatesTags:["product"]
+            invalidatesTags: ["product"]
         }),
-        deleteProduct: builder.mutation<void, Iproduct>({
+        removeProduct: buidler.mutation<number, number>({
             query: (id) => {
                 return {
                     url: `products/${id}`,
-                    method: 'DELETE'
+                    method: "DELETE",
                 }
             },
-            invalidatesTags:["product"]
+            invalidatesTags: ["product"]
         })
-    }),
+    })
 })
 
-export const {
-    useGetProductsQuery,
-    useGetProductQuery,
-    useAddProductMutation,
-    useUpdateProductMutation,
-    useDeleteProductMutation
-} = productApi;
+export const { useGetproductsQuery, useGetproductByidQuery, useCreateProductMutation, useUpdateproductMutation, useRemoveProductMutation } = productAPI

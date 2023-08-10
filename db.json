@@ -7,34 +7,10 @@
       "description": "aaaaaaaaaaa"
     },
     {
-      "id": 3,
-      "name": "aaaaaaaa",
-      "price": "2333",
-      "description": "a"
-    },
-    {
-      "id": 4,
-      "name": "aaaaaaaaaaaaaaaaa",
-      "price": "22222222222",
-      "description": "aaaaaaaaaaaa"
-    },
-    {
-      "id": 5,
-      "name": "update product",
-      "price": "111111",
-      "description": "aaaaaaaaaaaa"
-    },
-    {
-      "id": 6,
-      "name": "update",
-      "price": "203",
-      "description": "q"
-    },
-    {
-      "id": 7,
-      "name": "a",
-      "price": "2345",
-      "description": "aaaaaaa"
+      "id": 1,
+      "name": "aa",
+      "price": "22222",
+      "description": "aaaaaaaaaaa"
     }
   ]
 }
